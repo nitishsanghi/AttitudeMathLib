@@ -1,4 +1,6 @@
 #include "AMLMatrix33.h"
+#include "AMLVector3.h"
+#include <cmath>
 
 namespace AML{
 
@@ -281,7 +283,7 @@ namespace AML{
             result[8] = (rhs.m11 * rhs.m22 - rhs.m21 * rhs.m12) * invdet;
             return Matrix33(result);
         }
-        return Matrix33(NAN)
+        return Matrix33(NAN);
     }
     
     double determinant(const Matrix33& rhs){

@@ -132,12 +132,12 @@ test/clean: test/CMakeFiles/AML_Test.dir/clean
 AML/CMakeFiles/AML.dir/all:
 	$(MAKE) $(MAKESILENT) -f AML/CMakeFiles/AML.dir/build.make AML/CMakeFiles/AML.dir/depend
 	$(MAKE) $(MAKESILENT) -f AML/CMakeFiles/AML.dir/build.make AML/CMakeFiles/AML.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nitishsanghi/Documents/AttitudeMathLib/build/CMakeFiles --progress-num=1,2 "Built target AML"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nitishsanghi/Documents/AttitudeMathLib/build/CMakeFiles --progress-num=1,2,3 "Built target AML"
 .PHONY : AML/CMakeFiles/AML.dir/all
 
 # Build rule for subdir invocation for target.
 AML/CMakeFiles/AML.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nitishsanghi/Documents/AttitudeMathLib/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nitishsanghi/Documents/AttitudeMathLib/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AML/CMakeFiles/AML.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nitishsanghi/Documents/AttitudeMathLib/build/CMakeFiles 0
 .PHONY : AML/CMakeFiles/AML.dir/rule
@@ -158,12 +158,12 @@ AML/CMakeFiles/AML.dir/clean:
 example/CMakeFiles/AML_Example.dir/all: AML/CMakeFiles/AML.dir/all
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/AML_Example.dir/build.make example/CMakeFiles/AML_Example.dir/depend
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/AML_Example.dir/build.make example/CMakeFiles/AML_Example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nitishsanghi/Documents/AttitudeMathLib/build/CMakeFiles --progress-num=3,4 "Built target AML_Example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nitishsanghi/Documents/AttitudeMathLib/build/CMakeFiles --progress-num=4,5 "Built target AML_Example"
 .PHONY : example/CMakeFiles/AML_Example.dir/all
 
 # Build rule for subdir invocation for target.
 example/CMakeFiles/AML_Example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nitishsanghi/Documents/AttitudeMathLib/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nitishsanghi/Documents/AttitudeMathLib/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/AML_Example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nitishsanghi/Documents/AttitudeMathLib/build/CMakeFiles 0
 .PHONY : example/CMakeFiles/AML_Example.dir/rule
@@ -184,12 +184,12 @@ example/CMakeFiles/AML_Example.dir/clean:
 test/CMakeFiles/AML_Test.dir/all: AML/CMakeFiles/AML.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/AML_Test.dir/build.make test/CMakeFiles/AML_Test.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/AML_Test.dir/build.make test/CMakeFiles/AML_Test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nitishsanghi/Documents/AttitudeMathLib/build/CMakeFiles --progress-num=5,6 "Built target AML_Test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nitishsanghi/Documents/AttitudeMathLib/build/CMakeFiles --progress-num=6,7 "Built target AML_Test"
 .PHONY : test/CMakeFiles/AML_Test.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/AML_Test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nitishsanghi/Documents/AttitudeMathLib/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nitishsanghi/Documents/AttitudeMathLib/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/AML_Test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nitishsanghi/Documents/AttitudeMathLib/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/AML_Test.dir/rule

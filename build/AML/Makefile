@@ -185,6 +185,30 @@ AML/fast:
 	cd /Users/nitishsanghi/Documents/AttitudeMathLib/build && $(MAKE) $(MAKESILENT) -f AML/CMakeFiles/AML.dir/build.make AML/CMakeFiles/AML.dir/build
 .PHONY : AML/fast
 
+AMLMatrix33.o: AMLMatrix33.cpp.o
+.PHONY : AMLMatrix33.o
+
+# target to build an object file
+AMLMatrix33.cpp.o:
+	cd /Users/nitishsanghi/Documents/AttitudeMathLib/build && $(MAKE) $(MAKESILENT) -f AML/CMakeFiles/AML.dir/build.make AML/CMakeFiles/AML.dir/AMLMatrix33.cpp.o
+.PHONY : AMLMatrix33.cpp.o
+
+AMLMatrix33.i: AMLMatrix33.cpp.i
+.PHONY : AMLMatrix33.i
+
+# target to preprocess a source file
+AMLMatrix33.cpp.i:
+	cd /Users/nitishsanghi/Documents/AttitudeMathLib/build && $(MAKE) $(MAKESILENT) -f AML/CMakeFiles/AML.dir/build.make AML/CMakeFiles/AML.dir/AMLMatrix33.cpp.i
+.PHONY : AMLMatrix33.cpp.i
+
+AMLMatrix33.s: AMLMatrix33.cpp.s
+.PHONY : AMLMatrix33.s
+
+# target to generate assembly for a file
+AMLMatrix33.cpp.s:
+	cd /Users/nitishsanghi/Documents/AttitudeMathLib/build && $(MAKE) $(MAKESILENT) -f AML/CMakeFiles/AML.dir/build.make AML/CMakeFiles/AML.dir/AMLMatrix33.cpp.s
+.PHONY : AMLMatrix33.cpp.s
+
 AMLVector3.o: AMLVector3.cpp.o
 .PHONY : AMLVector3.o
 
@@ -223,6 +247,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... AML"
+	@echo "... AMLMatrix33.o"
+	@echo "... AMLMatrix33.i"
+	@echo "... AMLMatrix33.s"
 	@echo "... AMLVector3.o"
 	@echo "... AMLVector3.i"
 	@echo "... AMLVector3.s"

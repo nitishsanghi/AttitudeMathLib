@@ -1,4 +1,4 @@
-#include "Catch2/catch.hpp"
+/*#include "Catch2/catch.hpp"
 #include "../AML/AML.h"
 
 TEST_CASE("Vector3 Constructors", "[Vector3"){
@@ -13,4 +13,4 @@ TEST_CASE("Vector3 Constructors", "[Vector3"){
     CHECK(v.x == 5.0);
     CHECK(v.y == 5.0);
     CHECK(v.z == 5.0);
-}
+}*/

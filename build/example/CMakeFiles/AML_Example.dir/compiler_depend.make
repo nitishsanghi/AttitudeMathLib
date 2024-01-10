@@ -732,11 +732,14 @@ example/CMakeFiles/AML_Example.dir/main.cpp.o: /Users/nitishsanghi/Documents/Att
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h \
+  /Users/nitishsanghi/Documents/AttitudeMathLib/AML/AMLMatrix33.h \
   /Users/nitishsanghi/Documents/AttitudeMathLib/AML/AMLVector3.h \
   /Users/nitishsanghi/Documents/AttitudeMathLib/AML/AML.h
 
 
 /Users/nitishsanghi/Documents/AttitudeMathLib/AML/AMLVector3.h:
+
+/Users/nitishsanghi/Documents/AttitudeMathLib/AML/AMLMatrix33.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h:
 
