@@ -97,19 +97,35 @@ AML/CMakeFiles/AML.dir/AMLMatrix33.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AML.dir/AMLMatrix33.cpp.s"
 	cd /Users/nitishsanghi/Documents/AttitudeMathLib/build/AML && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nitishsanghi/Documents/AttitudeMathLib/AML/AMLMatrix33.cpp -o CMakeFiles/AML.dir/AMLMatrix33.cpp.s
 
+AML/CMakeFiles/AML.dir/AMLDCM.cpp.o: AML/CMakeFiles/AML.dir/flags.make
+AML/CMakeFiles/AML.dir/AMLDCM.cpp.o: /Users/nitishsanghi/Documents/AttitudeMathLib/AML/AMLDCM.cpp
+AML/CMakeFiles/AML.dir/AMLDCM.cpp.o: AML/CMakeFiles/AML.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nitishsanghi/Documents/AttitudeMathLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object AML/CMakeFiles/AML.dir/AMLDCM.cpp.o"
+	cd /Users/nitishsanghi/Documents/AttitudeMathLib/build/AML && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT AML/CMakeFiles/AML.dir/AMLDCM.cpp.o -MF CMakeFiles/AML.dir/AMLDCM.cpp.o.d -o CMakeFiles/AML.dir/AMLDCM.cpp.o -c /Users/nitishsanghi/Documents/AttitudeMathLib/AML/AMLDCM.cpp
+
+AML/CMakeFiles/AML.dir/AMLDCM.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AML.dir/AMLDCM.cpp.i"
+	cd /Users/nitishsanghi/Documents/AttitudeMathLib/build/AML && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nitishsanghi/Documents/AttitudeMathLib/AML/AMLDCM.cpp > CMakeFiles/AML.dir/AMLDCM.cpp.i
+
+AML/CMakeFiles/AML.dir/AMLDCM.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AML.dir/AMLDCM.cpp.s"
+	cd /Users/nitishsanghi/Documents/AttitudeMathLib/build/AML && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nitishsanghi/Documents/AttitudeMathLib/AML/AMLDCM.cpp -o CMakeFiles/AML.dir/AMLDCM.cpp.s
+
 # Object files for target AML
 AML_OBJECTS = \
 "CMakeFiles/AML.dir/AMLVector3.cpp.o" \
-"CMakeFiles/AML.dir/AMLMatrix33.cpp.o"
+"CMakeFiles/AML.dir/AMLMatrix33.cpp.o" \
+"CMakeFiles/AML.dir/AMLDCM.cpp.o"
 
 # External object files for target AML
 AML_EXTERNAL_OBJECTS =
 
 AML/libAML.a: AML/CMakeFiles/AML.dir/AMLVector3.cpp.o
 AML/libAML.a: AML/CMakeFiles/AML.dir/AMLMatrix33.cpp.o
+AML/libAML.a: AML/CMakeFiles/AML.dir/AMLDCM.cpp.o
 AML/libAML.a: AML/CMakeFiles/AML.dir/build.make
 AML/libAML.a: AML/CMakeFiles/AML.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/nitishsanghi/Documents/AttitudeMathLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libAML.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/nitishsanghi/Documents/AttitudeMathLib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libAML.a"
 	cd /Users/nitishsanghi/Documents/AttitudeMathLib/build/AML && $(CMAKE_COMMAND) -P CMakeFiles/AML.dir/cmake_clean_target.cmake
 	cd /Users/nitishsanghi/Documents/AttitudeMathLib/build/AML && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AML.dir/link.txt --verbose=$(VERBOSE)
 

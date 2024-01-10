@@ -1,2 +1,2 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libAML.a CMakeFiles/AML.dir/AMLVector3.cpp.o CMakeFiles/AML.dir/AMLMatrix33.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ar qc libAML.a CMakeFiles/AML.dir/AMLVector3.cpp.o CMakeFiles/AML.dir/AMLMatrix33.cpp.o CMakeFiles/AML.dir/AMLDCM.cpp.o
 /Library/Developer/CommandLineTools/usr/bin/ranlib libAML.a

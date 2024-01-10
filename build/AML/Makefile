@@ -185,6 +185,30 @@ AML/fast:
 	cd /Users/nitishsanghi/Documents/AttitudeMathLib/build && $(MAKE) $(MAKESILENT) -f AML/CMakeFiles/AML.dir/build.make AML/CMakeFiles/AML.dir/build
 .PHONY : AML/fast
 
+AMLDCM.o: AMLDCM.cpp.o
+.PHONY : AMLDCM.o
+
+# target to build an object file
+AMLDCM.cpp.o:
+	cd /Users/nitishsanghi/Documents/AttitudeMathLib/build && $(MAKE) $(MAKESILENT) -f AML/CMakeFiles/AML.dir/build.make AML/CMakeFiles/AML.dir/AMLDCM.cpp.o
+.PHONY : AMLDCM.cpp.o
+
+AMLDCM.i: AMLDCM.cpp.i
+.PHONY : AMLDCM.i
+
+# target to preprocess a source file
+AMLDCM.cpp.i:
+	cd /Users/nitishsanghi/Documents/AttitudeMathLib/build && $(MAKE) $(MAKESILENT) -f AML/CMakeFiles/AML.dir/build.make AML/CMakeFiles/AML.dir/AMLDCM.cpp.i
+.PHONY : AMLDCM.cpp.i
+
+AMLDCM.s: AMLDCM.cpp.s
+.PHONY : AMLDCM.s
+
+# target to generate assembly for a file
+AMLDCM.cpp.s:
+	cd /Users/nitishsanghi/Documents/AttitudeMathLib/build && $(MAKE) $(MAKESILENT) -f AML/CMakeFiles/AML.dir/build.make AML/CMakeFiles/AML.dir/AMLDCM.cpp.s
+.PHONY : AMLDCM.cpp.s
+
 AMLMatrix33.o: AMLMatrix33.cpp.o
 .PHONY : AMLMatrix33.o
 
@@ -247,6 +271,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... AML"
+	@echo "... AMLDCM.o"
+	@echo "... AMLDCM.i"
+	@echo "... AMLDCM.s"
 	@echo "... AMLMatrix33.o"
 	@echo "... AMLMatrix33.i"
 	@echo "... AMLMatrix33.s"
