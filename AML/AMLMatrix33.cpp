@@ -218,24 +218,87 @@ namespace AML{
     }
     
     Matrix33 operator/(double s, const Matrix33& rhs){
-        return Matrix33(s) /= rhs;
+        double data[3][3];
+        data[0][0] = s / rhs.data[0][0];
+        data[0][1] = s / rhs.data[0][1];
+        data[0][2] = s / rhs.data[0][2];
+        data[1][0] = s / rhs.data[1][0];
+        data[1][1] = s / rhs.data[1][1];
+        data[1][2] = s / rhs.data[1][2];
+        data[2][0] = s / rhs.data[2][0];
+        data[2][1] = s / rhs.data[2][1];
+        data[2][2] = s / rhs.data[2][2];
+        return Matrix33(data);
     }
 
 
     // Matrix Operations
-    Vector3 diag(const Matrix33& rhs){}
+    Vector3 diag(const Matrix33& rhs){
+        return Vector3(rhs.m11, rhs.m22, rhs.m33);
+    }
     
-    Matrix33 diag(const Vector3& rhs){}    
+    Matrix33 diag(const Vector3& rhs){
+        double data[3][3];
+        data[0][0] = rhs.x;
+        data[0][1] = 0.0;
+        data[0][2] = 0.0;
+        data[1][0] = 0.0;
+        data[1][1] = rhs.y;
+        data[1][2] = 0.0;
+        data[2][0] = 0.0;
+        data[2][1] = 0.0;
+        data[2][2] = rhs.z;
+        return Matrix33(data);
+    }    
     
-    Matrix33 transpose(const Matrix33& rhs){}
+    Matrix33 transpose(const Matrix33& rhs){
+        double result[9];
+        result[0] = rhs.m11;
+        result[1] = rhs.m21;
+        result[2] = rhs.m31;
+        result[3] = rhs.m12;
+        result[4] = rhs.m22;
+        result[5] = rhs.m32;
+        result[6] = rhs.m13;
+        result[7] = rhs.m23;
+        result[8] = rhs.m33;
+        return Matrix33(result);
+    }
     
-    Matrix33 inverse(const Matrix33& rhs){}
+    Matrix33 inverse(const Matrix33& rhs){
+        double det = determinant(rhs);
+        if(fabs(det) > 0.0){
+            double result[9];
+            double invdet = 1.0 /det;
+            result[0] = (rhs.m22 * rhs.m33 - rhs.m32 * rhs.m23) * invdet;
+            result[1] = (rhs.m13 * rhs.m32 - rhs.m12 * rhs.m33) * invdet;
+            result[2] = (rhs.m12 * rhs.m23 - rhs.m13 * rhs.m22) * invdet;
+            result[3] = (rhs.m23 * rhs.m31 - rhs.m21 * rhs.m33) * invdet;
+            result[4] = (rhs.m11 * rhs.m33 - rhs.m13 * rhs.m31) * invdet;
+            result[5] = (rhs.m21 * rhs.m13 - rhs.m11 * rhs.m23) * invdet;
+            result[6] = (rhs.m21 * rhs.m32 - rhs.m31 * rhs.m22) * invdet;
+            result[7] = (rhs.m31 * rhs.m12 - rhs.m11 * rhs.m32) * invdet;
+            result[8] = (rhs.m11 * rhs.m22 - rhs.m21 * rhs.m12) * invdet;
+            return Matrix33(result);
+        }
+        return Matrix33(NAN)
+    }
     
-    double determinant(const Matrix33& rhs){}
+    double determinant(const Matrix33& rhs){
+        double det = rhs.m11 * (rhs.m22 * rhs.m33 - rhs.m32 * rhs.m23) -
+                     rhs.m12 * (rhs.m21 * rhs.m33 - rhs.m23 * rhs.m31) +
+                     rhs.m13 * (rhs.m21 * rhs.m32 - rhs.m22 * rhs.m31);
+    return det;
+    }
 
 
     // Stream Functions
-    std::ostream& operator<<(std::ostream& os, const Matrix33& obj){}
+    std::ostream& operator<<(std::ostream& os, const Matrix33& obj){
+        os << "[[" << obj.m11 << "," << obj.m12 << "," << obj.m13 << "],["
+                   << obj.m21 << "," << obj.m22 << "," << obj.m23 << "],["
+                   << obj.m31 << "," << obj.m32 << "," << obj.m33 << "]]";
+        return os;
+    }
 
 
 };
